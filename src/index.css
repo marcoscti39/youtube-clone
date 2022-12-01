@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-focus {
+  transition: transform 300ms;
+  position: absolute;
+  bottom: 49%;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  left: 0;
+  transform: scaleX(0);
+}
+
+.active {
+  transform: scaleX(1);
+}
+
+.channel-link {
+}
+
+.channel-link::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
